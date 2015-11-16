@@ -17,7 +17,7 @@ void draw() {
 
   // background clears each time the program loops
   background(0);
-  
+
   //Create hallway 
   fill(255);
 
