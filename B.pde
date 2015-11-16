@@ -1,8 +1,10 @@
 //Carlyle Gallagher 
 //Game Project 
 
-Player P1; //makes new player 
+float xChange;  // change for horizontal
+float yChange;  // change for horizontal
 
+Player P1; //makes new player 
 
 void setup() {
 
@@ -22,7 +24,13 @@ void draw() {
   fill(255);
 
   rect(80, 250, 40, 50);
-  
+
+  // generate a horizontal change
+  xChange = random(0, 30);
+
+  // generate a vertical change
+  yChange = random(0, 30);
+
   P1.update();
 }
 
