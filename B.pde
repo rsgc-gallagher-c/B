@@ -26,21 +26,23 @@ void setup() {
 
 
   //Create new player
-  P1 = new Player (100, 108, 92);
+  P1 = new Player (100, 108, 92, -10);
+
+  //slow down the rectangle 
+  //frameRate(1);
 }
 
 void draw() {
 
   // background clears each time the program loops
   background(0);
-  
+
   //Create hallway 
   fill(255);
 
   noStroke();
-  
-  //slow down the rectangle 
-  //frameRate(0.1); 
+
+
 
   // draw wall segment using
   rect(oldX, oldY, newX, newY);
@@ -59,9 +61,8 @@ void draw() {
   newX = newX + xChange;
   newY = newY + yChange;
   println(newY);
-  
+
   P1.update();
- 
 }
 
 //respond to key pressed 
@@ -75,8 +76,13 @@ void keyPressed() {
     print("d was pressed");
     P1.sets1 (-1);
   }
+
+  if (key == 'w') { 
+    print("w was pressed");
+    P1.sets2 (-10);
+  }
 }
 
-void keyReleased() {
+  void keyReleased() {
   P1.sets1 (0);
 }

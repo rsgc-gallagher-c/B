@@ -5,13 +5,17 @@ class Player {
   float r; //right of triangle 
   float l; // left of triangle 
   float s1; //speed of the triangle 
+  float w; //move the triangle up
+  float s2; //speed of the vertical movement 
 
   //constructor (like setup - runs once)
-  Player (float t_, float r_, float l_) {
+  Player (float t_, float r_, float l_, float w_) {
     t = t_;
     r = r_;
     l = l_;
+    w = w_;
     s1 = 0;
+    s2 = 2;
   }
 
   void update() {
@@ -28,7 +32,9 @@ class Player {
     r = r-s1;
     l = l-s1;
 
-
+    // Move the player up 
+    w = w-s2; 
+    
     ////end game 
     //if (l==80) {
     //  fill(255);
@@ -49,5 +55,11 @@ class Player {
   void sets1(float newS1_) {
     s1 = newS1_;
     print("s1 was set");
+  }
+  
+  //moving the player with the keys 
+  void sets2(float newS2_) {
+    s2 = newS2_;
+    print("s2 was set");
   }
 }
