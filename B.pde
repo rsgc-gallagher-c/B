@@ -12,18 +12,18 @@ float yChange;  // change for horizontal
 Player P1; //makes new player 
 
 void setup() {
-  
+
   //Make canvas 
   size(200, 300);
 
-// initial starting point for wall
+  // initial starting point for wall
   oldX = 40;
   oldY = 50;
-  
+
   // initial ending point for wall
   newX = 80;
   newY = 10;
-  
+
   // slow it down
   frameRate(1);
 
@@ -39,11 +39,13 @@ void draw() {
   //Create hallway 
   fill(255);
 
+  noStroke();
+
   rect(80, 250, 40, 50);
 
-// draw wall segment using
+  // draw wall segment using
   rect(oldX, oldY, newX, newY);
-    
+
   // make "new" or ending point become the starting point
   oldX = newX;
   oldY = newY;
@@ -54,7 +56,7 @@ void draw() {
   // generate a vertical change
   yChange = random(10, 10);
 
- // assign new ending points
+  // assign new ending points
   newX = newX + xChange;
   newY = newY + yChange;
 
