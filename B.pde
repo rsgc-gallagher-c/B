@@ -17,12 +17,12 @@ void setup() {
   size(200, 300);
 
   // initial starting point for wall
-  oldX = 40;
-  oldY = 50;
+  oldX = 80;
+  oldY = 250;
 
   // initial ending point for wall
-  newX = 80;
-  newY = 10;
+  newX = 70;
+  newY = 200;
 
 
   //Create new player
@@ -39,7 +39,7 @@ void draw() {
 
   noStroke();
 
-  rect(80, 250, 40, 50);
+//frameRate(0.25); /////////
 
   // draw wall segment using
   rect(oldX, oldY, newX, newY);
@@ -49,14 +49,15 @@ void draw() {
   oldY = newY;
 
   // generate a horizontal change
-  xChange = random(0, 0);                       //make to 10 later 
+  //xChange = random(0,0);                      
 
   // generate a vertical change
-  yChange = random(10, 10);
+  yChange = random(-10, -20);
 
   // assign new ending points
   newX = newX + xChange;
   newY = newY + yChange;
+  println(newY);
 
   P1.update();
 }
