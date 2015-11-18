@@ -33,13 +33,14 @@ void draw() {
 
   // background clears each time the program loops
   background(0);
-
+  
   //Create hallway 
   fill(255);
 
   noStroke();
-
-//frameRate(0.25); /////////
+  
+  //slow down the rectangle 
+  //frameRate(0.1); 
 
   // draw wall segment using
   rect(oldX, oldY, newX, newY);
@@ -58,8 +59,9 @@ void draw() {
   newX = newX + xChange;
   newY = newY + yChange;
   println(newY);
-
+  
   P1.update();
+ 
 }
 
 //respond to key pressed 
