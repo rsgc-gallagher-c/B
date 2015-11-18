@@ -24,8 +24,6 @@ void setup() {
   newX = 80;
   newY = 10;
 
-  // slow it down
-  frameRate(1);
 
   //Create new player
   P1 = new Player (100, 108, 92);
