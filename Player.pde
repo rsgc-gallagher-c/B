@@ -26,8 +26,9 @@ class Player {
     //r = r-s1;
     //l = l-s1;
 
-    //// Move the player up 
-    //w = w-s2; 
+    // Move the player up  
+    topX = topX-1;
+    topY = topY-1;
     
     ////end game 
     //if (l==80) {
