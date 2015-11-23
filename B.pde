@@ -10,7 +10,7 @@ void setup() {
   size(200, 300);
 
   //Create new player
-  P1 = new Player (100, 108, 92, -10);
+  P1 = new Player (100, 250);
   R1 = new Rectangle (); 
 
   //slow down the rectangle 
@@ -22,12 +22,12 @@ void draw() {
   // background clears each time the program loops
   background(0);
 
-  
+
 
   noStroke();
 
+  R1.update();
   P1.update();
-  R1.update(); 
 }
 
 //respond to key pressed 
@@ -35,19 +35,19 @@ void keyPressed() {
 
   if (key == 'a') {
     print("a was pressed");
-    P1.sets1 (+1);
+    //P1.sets1 (+1);
   }
   if (key == 'd') {
     print("d was pressed");
-    P1.sets1 (-1);
+    //P1.sets1 (-1);
   }
 
   if (key == 'w') { 
     print("w was pressed");
-    P1.sets2 (-10);
+    //P1.sets2 (-10);
   }
 }
 
 void keyReleased() {
-  P1.sets1 (0);
+  //P1.sets1 (0);
 }
