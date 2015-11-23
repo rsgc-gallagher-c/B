@@ -17,7 +17,7 @@ class Rectangle {
     fill(255);
 
     // draw rectangle 
-    rect(x, y, 50, 100);
+    rect(x, y, 50, 80);
 
     //Chaning the vertical position of the rect 
     y=y-1;
