@@ -19,7 +19,7 @@ class Player {
 
     //Make player (triangle) 
     
-    triangle(topX, topY, topX - 20, topY + 25, topX + 20, topY + 25);
+    triangle(topX, topY, topX - 15, topY + 20, topX + 15, topY + 20);
 
     //// Move the player 
     //t = t-s1;
