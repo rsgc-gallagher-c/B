@@ -41,12 +41,8 @@ void keyPressed() {
     print("d was pressed");
     //P1.sets1 (-1);
   }
-
-  if (key == 'w') { 
-    print("w was pressed");
-    //P1.sets2 (-10);
-  }
 }
+
 
 void keyReleased() {
   //P1.sets1 (0);

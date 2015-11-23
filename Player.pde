@@ -3,12 +3,13 @@ class Player {
   //Global Variables 
   float topX; //top of triangle X position 
   float topY; //top of triangle Y position 
-
+  float s1;   // set the speed of the movemnet left and right for the player 
 
   //constructor (like setup - runs once)
-  Player (float topX_, float topY_) {
+  Player (float topX_, float topY_, float s1_) {
     topX = topX_;
     topY = topY_;
+    s1 = s1_; 
   }
 
   void update() {
@@ -20,12 +21,11 @@ class Player {
 
     triangle(topX, topY, topX - 15, topY + 20, topX + 15, topY + 20);
 
-    //// Move the player 
-    //t = t-s1;
-    //r = r-s1;
-    //l = l-s1;
-
-    // Move the player up  
+    // Move the player herizontal 
+    topX = topX-s1;
+    
+    
+    // Move the player vertical  
     topY = topY-1;
 
     ////end game 
@@ -44,15 +44,9 @@ class Player {
     //  noLoop();
     //}
   }
-  ////moving the player with the keys 
-  //void sets1(float newS1_) {
-  //  s1 = newS1_;
-  //  print("s1 was set");
-  //}
-
-  ////moving the player with the keys up and down 
-  //void sets2(float newS2_) {
-  //  s2 = newS2_;
-  //  print("s2 was set");
-  //}
+  //moving the player with the keys 
+  void sets1(float newS1_) {
+    s1 = newS1_;
+    print("s1 was set");
+  }
 }
