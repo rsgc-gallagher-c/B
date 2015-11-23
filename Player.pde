@@ -9,7 +9,7 @@ class Player {
   Player (float topX_, float topY_, float s1_) {
     topX = topX_;
     topY = topY_;
-    s1 = s1_; 
+    s1 = s1_;
   }
 
   void update() {
@@ -23,26 +23,10 @@ class Player {
 
     // Move the player herizontal 
     topX = topX-s1;
-    
-    
+
+
     // Move the player vertical  
     topY = topY-1;
-
-    ////end game 
-    //if (l==80) {
-    //  fill(255);
-    //  textSize(20);
-    //  text("GAME OVER", 10, 30);
-    //  noLoop();
-    //}
-
-
-    //if (r==120) {
-    //  fill(225);
-    //  textSize(20);
-    //  text("GAME OVER", 10, 30);
-    //  noLoop();
-    //}
   }
   //moving the player with the keys 
   void sets1(float newS1_) {
