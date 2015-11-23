@@ -1,48 +1,25 @@
 class Rectangle {
 
   //global variables 
-  float oldX;  // starting X of current segment
-  float oldY;  // starting Y of current segment
-  float newX;  // ending X of current segment
-  float newY;  // ending Y of current segment
+  float x; //X horizontal position 
+  float y; //Y vertial position 
 
-
-  float xChange;  // change for horizontal
-  float yChange;  // change for horizontal
-  
   //constructor (like setup - runs once)
-  Rectangle(){ 
-  
-  
-  // initial starting point for wall
-  oldX = 80;
-  oldY = 250;
+  Rectangle() { 
 
-  // initial ending point for wall
-  newX = 70;
-  newY = 200;
+    x=75; 
+    y=210;
   }
-  
-  void update(){
-  
-     // draw wall segment using
-  rect(oldX, oldY, newX, newY);
 
-  // make "new" or ending point become the starting point
-  oldX = newX;
-  oldY = newY;
+  void update() {
 
-  // generate a horizontal change
-  //xChange = random(0,0);                      
+    //Create the fill of the Rect white 
+    fill(255);
 
-  // generate a vertical change
-  yChange = random(-10, -20);
+    // draw rectangle 
+    rect(x, y, 50, 100);
 
-  // assign new ending points
-  newX = newX + xChange;
-  newY = newY + yChange;
-  println(newY);
-  
+    //Chaning the vertical position of the rect 
+    y=y-1;
   }
-  
 }

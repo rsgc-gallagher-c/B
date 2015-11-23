@@ -57,7 +57,7 @@ class Player {
     print("s1 was set");
   }
   
-  //moving the player with the keys 
+  //moving the player with the keys up and down 
   void sets2(float newS2_) {
     s2 = newS2_;
     print("s2 was set");

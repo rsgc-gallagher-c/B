@@ -11,7 +11,7 @@ void setup() {
 
   //Create new player
   P1 = new Player (100, 108, 92, -10);
-  R1 = new Rectangle (oldX, oldY, newX, newY); 
+  R1 = new Rectangle (); 
 
   //slow down the rectangle 
   //frameRate(1);
@@ -22,8 +22,7 @@ void draw() {
   // background clears each time the program loops
   background(0);
 
-  //Create hallway 
-  fill(255);
+  
 
   noStroke();
 
