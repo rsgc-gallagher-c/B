@@ -3,13 +3,12 @@ class Player {
   //Global Variables 
   float topX; //top of triangle X position 
   float topY; //top of triangle Y position 
- 
+
 
   //constructor (like setup - runs once)
   Player (float topX_, float topY_) {
     topX = topX_;
     topY = topY_;
-    
   }
 
   void update() {
@@ -18,7 +17,7 @@ class Player {
     fill(0, 0, 0);
 
     //Make player (triangle) 
-    
+
     triangle(topX, topY, topX - 15, topY + 20, topX + 15, topY + 20);
 
     //// Move the player 
@@ -27,9 +26,8 @@ class Player {
     //l = l-s1;
 
     // Move the player up  
-    topX = topX-1;
     topY = topY-1;
-    
+
     ////end game 
     //if (l==80) {
     //  fill(255);
@@ -51,7 +49,7 @@ class Player {
   //  s1 = newS1_;
   //  print("s1 was set");
   //}
-  
+
   ////moving the player with the keys up and down 
   //void sets2(float newS2_) {
   //  s2 = newS2_;
