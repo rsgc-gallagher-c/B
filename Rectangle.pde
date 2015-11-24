@@ -3,12 +3,16 @@ class Rectangle {
   //global variables 
   float x; //X horizontal position 
   float y; //Y vertial position 
+  float a;
+  float b;
 
   //constructor (like setup - runs once)
   Rectangle() { 
 
     x=75; 
     y=210;
+    a=-5;
+    b=0;
   }
 
   void update() {
@@ -23,6 +27,16 @@ class Rectangle {
     //y=y-1;
     
     //Changing the horizontal position if the rect 
-    x=x-random(0, 5);
-  }
+    x=x+random(a, b);
+    
+    if(x < 0) {
+   a=0;
+   b=5;
+    }
+        if(x > 150) {
+   a=-5;
+   b=0;
+    }
+
+}
 }

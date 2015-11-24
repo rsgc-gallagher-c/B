@@ -35,15 +35,15 @@ void keyPressed() {
 
   if (key == 'a') {
     print("a was pressed");
-    //P1.sets1 (+1);
+    P1.sets1 (+1);
   }
   if (key == 'd') {
     print("d was pressed");
-    //P1.sets1 (-1);
+    P1.sets1 (-1);
   }
 }
 
 
 void keyReleased() {
-  //P1.sets1 (0);
+  P1.sets1 (0);
 }
