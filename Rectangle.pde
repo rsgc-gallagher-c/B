@@ -31,10 +31,10 @@ class Rectangle {
     
     if(x < 0) {
    a=0;
-   b=1;
+   b=1.3;
     }
         if(x > 150) {
-   a=-1;
+   a=-1.3;
    b=0;
     }
 
