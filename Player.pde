@@ -18,7 +18,7 @@ class Player {
 
     //Make player (triangle) 
 
-    triangle(topX, topY, topX - 15, topY + 20, topX + 15, topY + 20);
+    triangle(topX, topY, topX - 12, topY + 17, topX + 12, topY + 17);
 
     ////End Game 
     //if (topX == x && topX == x + 20) {
