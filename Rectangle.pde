@@ -11,7 +11,7 @@ class Rectangle {
 
     x=75; 
     y=210;
-    a=-5;
+    a=-1;
     b=0;
   }
 
@@ -31,10 +31,10 @@ class Rectangle {
     
     if(x < 0) {
    a=0;
-   b=5;
+   b=1;
     }
         if(x > 150) {
-   a=-5;
+   a=-1;
    b=0;
     }
 
