@@ -6,10 +6,10 @@ class Player {
   float s1;   // set the speed of the movemnet left and right for the player 
 
   //constructor (like setup - runs once)
-  Player (float topX_, float topY_, float s1_) {
+  Player (float topX_, float topY_) {
     topX = topX_;
     topY = topY_;
-    s1 = s1_;
+    
   }
 
   void update() {
@@ -26,7 +26,7 @@ class Player {
 
 
     // Move the player vertical  
-    topY = topY-1;
+    //topY = topY-1;
   }
   //moving the player with the keys 
   void sets1(float newS1_) {

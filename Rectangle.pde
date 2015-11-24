@@ -20,6 +20,9 @@ class Rectangle {
     rect(x, y, 50, 80);
 
     //Chaning the vertical position of the rect 
-    y=y-1;
+    //y=y-1;
+    
+    //Changing the horizontal position if the rect 
+    x=x-random(0, 5);
   }
 }
