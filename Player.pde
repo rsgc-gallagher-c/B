@@ -9,7 +9,6 @@ class Player {
   Player (float topX_, float topY_) {
     topX = topX_;
     topY = topY_;
-    
   }
 
   void update() {
@@ -21,16 +20,24 @@ class Player {
 
     triangle(topX, topY, topX - 15, topY + 20, topX + 15, topY + 20);
 
-    // Move the player herizontal 
-    topX = topX-s1;
+    ////End Game 
+    //if (topX == x && topX == x + 20) {
+    //  textSize(20);
+    //  text("GAME OVER", 10, 30);
+    //  noLoop();
 
 
-    // Move the player vertical  
-    //topY = topY-1;
-  }
-  //moving the player with the keys 
-  void sets1(float newS1_) {
-    s1 = newS1_;
-    print("s1 was set");
-  }
-}
+
+        // Move the player herizontal 
+        topX = topX-s1;
+
+
+        // Move the player vertical  
+        //topY = topY-1;
+      }
+      //moving the player with the keys 
+      void sets1(float newS1_) {
+        s1 = newS1_;
+        print("s1 was set");
+      }
+    }
