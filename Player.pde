@@ -20,11 +20,19 @@ class Player {
 
     triangle(topX, topY, topX - 12, topY + 17, topX + 12, topY + 17);
 
-    //End Game 
-    if () {
-     textSize(20);
-     text("GAME OVER", 10, 30);
-     noLoop();
+    //End Game on left side  
+    if (topX -12 < x) {
+    textSize(20);
+    text("GAME OVER", 10, 30);
+    noLoop();
+    }
+    
+    //End game on right side 
+    if (topX +12 > x + 20);{
+    textSize(20);
+    text("GAME OVER", 10, 30);
+    noLoop();
+    }
 
 
 

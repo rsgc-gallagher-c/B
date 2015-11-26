@@ -25,18 +25,17 @@ class Rectangle {
 
     //Chaning the vertical position of the rect 
     //y=y-1;
-    
+
     //Changing the horizontal position if the rect 
     x=x+random(a, b);
-    
-    if(x < 0) {
-   a=0;
-   b=1.3;
-    }
-        if(x > 150) {
-   a=-1.3;
-   b=0;
-    }
 
-}
+    if (x < 0) {
+      a=0;
+      b=1.3;
+    }
+    if (x > 150) {
+      a=-1.3;
+      b=0;
+    }
+  }
 }
