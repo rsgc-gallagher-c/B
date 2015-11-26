@@ -20,11 +20,11 @@ class Player {
 
     triangle(topX, topY, topX - 12, topY + 17, topX + 12, topY + 17);
 
-    ////End Game 
-    //if (topX == x && topX == x + 20) {
-    //  textSize(20);
-    //  text("GAME OVER", 10, 30);
-    //  noLoop();
+    //End Game 
+    if () {
+     textSize(20);
+     text("GAME OVER", 10, 30);
+     noLoop();
 
 
 
