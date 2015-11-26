@@ -44,7 +44,7 @@ void draw() {
   }
 
   //End game on right side 
-  if (P1.gettopX() +12 == R1.getx() + 20);
+  if (P1.gettopX() +12 == R1.getx() + 50);
   {
     textSize(20);
     text("GAME OVER", 10, 50);
