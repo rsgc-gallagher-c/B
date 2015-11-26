@@ -30,13 +30,28 @@ void draw() {
 
   //score counter 
   fill (255);
-  
+
   m = m+1;
   score = m/60;
   textSize(20);
   text("Score: "+ score, 10, 30);
 
-    noStroke();
+  //End Game on left side  
+  if (P1.gettopX() -12 < R1.getx) {
+    textSize(20);
+    text("GAME OVER", 10, 30);
+    noLoop();
+  }
+
+  //End game on right side 
+  if (P1.gettopX() +12 > R1.getx + 20);
+  {
+    textSize(20);
+    text("GAME OVER", 10, 30);
+    noLoop();
+  }
+
+  noStroke();
 
   R1.update();
   P1.update();

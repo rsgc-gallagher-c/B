@@ -17,6 +17,7 @@ class Rectangle {
 
   void update() {
 
+    
     //Create the fill of the Rect white 
     fill(255);
 
@@ -38,4 +39,10 @@ class Rectangle {
       b=0;
     }
   }
+  
+  //Gets the position of the rectangle  
+   float getx() { 
+    return x; 
+   }
+  
 }

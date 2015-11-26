@@ -20,32 +20,26 @@ class Player {
 
     triangle(topX, topY, topX - 12, topY + 17, topX + 12, topY + 17);
 
-    //End Game on left side  
-    if (topX -12 < x) {
-    textSize(20);
-    text("GAME OVER", 10, 30);
-    noLoop();
-    }
-    
-    //End game on right side 
-    if (topX +12 > x + 20);{
-    textSize(20);
-    text("GAME OVER", 10, 30);
-    noLoop();
-    }
+//*****THS IS WHERE GAME OVER WENT BEFORE IT WAS MOVED TO MAIN PROGRAM*****//
 
 
 
-        // Move the player herizontal 
-        topX = topX-s1;
+    // Move the player herizontal 
+    topX = topX-s1;
 
 
-        // Move the player vertical  
-        //topY = topY-1;
-      }
-      //moving the player with the keys 
-      void sets1(float newS1_) {
-        s1 = newS1_;
-        print("s1 was set");
-      }
-    }
+    // Move the player vertical  
+    //topY = topY-1;
+  }
+  
+  //Gets the position of the triangle 
+   float gettopX() { 
+    return topX; 
+   }
+  
+  //moving the player with the keys 
+  void sets1(float newS1_) {
+    s1 = newS1_;
+    print("s1 was set");
+  }
+}
