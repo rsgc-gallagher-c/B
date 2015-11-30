@@ -29,15 +29,17 @@ void draw() {
   background(0);
 
 
-   
+
   fill (255);
-  
-  
-println(P1.getv());
-println(P1.getu());
-println(R1.getx());
-println(R1.getx()+50);
-//score counter
+
+  //To see where the points are 
+  println(P1.getv());
+  println(P1.getu());
+  println(R1.getx());
+  println(R1.getx()+50);
+
+
+  //score counter
   m = m+1;
   score = m/60;
   textSize(20);
@@ -45,17 +47,17 @@ println(R1.getx()+50);
 
   //End Game on left side  
   if (P1.getv() < R1.getx()) {
-   textSize(20);
-   text("GAME OVER", 10, 50);
-   noLoop();
+    textSize(20);
+    text("GAME OVER", 10, 50);
+    noLoop();
   }
 
   //End game on right side 
   if (P1.getu() > R1.getx() + 50);  
   {
-   textSize(20);
-   text("GAME OVER", 10, 50);
-   noLoop();
+    textSize(20);
+    text("GAME OVER", 10, 50);
+    noLoop();
   }
 
   noStroke();

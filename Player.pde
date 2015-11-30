@@ -28,8 +28,8 @@ class Player {
     topX = topX-s1;
 
     //This is here becasue you can't add and subtract in text 
-    v1=topX-12;
-    u1=topX+12;
+    v1=topX+12;
+    u1=topX-12;
 
     //Showing position of the Player 
     fill(255);
