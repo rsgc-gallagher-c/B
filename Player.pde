@@ -20,23 +20,29 @@ class Player {
 
     triangle(topX, topY, topX - 12, topY + 17, topX + 12, topY + 17);
 
-//*****THS IS WHERE GAME OVER WENT BEFORE IT WAS MOVED TO MAIN PROGRAM*****//
-
-
-
     // Move the player herizontal 
     topX = topX-s1;
+
+    //This is here becasue you can't add and subtract in text 
+    float v=topX-12;
+    float u=topX+12;
+
+    //Showing position of the Player 
+    fill(255);
+    textSize(15);
+    text("topX+12 : "+v, 50, 90);
+    text("topX-12 : "+u, 50, 110);
 
 
     // Move the player vertical  
     //topY = topY-1;
   }
-  
+
   //Gets the position of the triangle 
-   float gettopX() { 
-    return topX; 
-   }
-  
+  float gettopX() { 
+    return topX;
+  }
+
   //moving the player with the keys 
   void sets1(float newS1_) {
     s1 = newS1_;

@@ -38,17 +38,17 @@ void draw() {
 
   //End Game on left side  
   if (P1.gettopX() -12 < R1.getx()) {
-    textSize(20);
-    text("GAME OVER", 10, 50);
-    noLoop();
+  textSize(20);
+  text("GAME OVER", 10, 50);
+  noLoop();
   }
 
   //End game on right side 
-  if (P1.gettopX() +12 > R1.getx() + 50); //experiment with diffrent numbers 
+  if (P1.gettopX() +12 > R1.getx() + 50);  
   {
-    textSize(20);
-    text("GAME OVER", 10, 50);
-    noLoop();
+  textSize(20);
+  text("GAME OVER", 10, 50);
+  noLoop();
   }
 
   noStroke();

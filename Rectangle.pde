@@ -17,13 +17,18 @@ class Rectangle {
 
   void update() {
 
-    
+
     //Create the fill of the Rect white 
     fill(255);
 
     // draw rectangle 
     rect(x, y, 50, 80);
 
+    //Showing position of the Rect 
+
+    text("X : "+x, 90, 130);
+    
+    
     //Chaning the vertical position of the rect 
     //y=y-1;
 
@@ -39,10 +44,9 @@ class Rectangle {
       b=0;
     }
   }
-  
+
   //Gets the position of the rectangle  
-   float getx() { 
-    return x; 
-   }
-  
+  float getx() { 
+    return x;
+  }
 }
