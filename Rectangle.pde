@@ -51,7 +51,7 @@ class Rectangle {
   }
 
   //Gets the position of the rectangle  
-  float getx() { 
+  float getLeftSide() { 
     return x;
   }
 }

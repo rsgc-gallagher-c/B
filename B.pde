@@ -32,11 +32,11 @@ void draw() {
 
   fill (255);
 
-  //To see where the points are 
-  println(P1.getv());
-  println(P1.getu());
-  println(R1.getx());
-  println(R1.getx()+50);
+  ////To see where the points are 
+  //println(P1.getv());
+  //println(P1.getu());
+  //println(R1.getx());
+  //println(R1.getx()+50);
 
 
   //score counter
@@ -45,19 +45,25 @@ void draw() {
   textSize(20);
   text("Score: "+ score, 10, 30);
 
+  //Showing position of the Player 
+  fill(255);
+  textSize(15);
+  text("Right Edge : "+P1.getRightEdge(), 50, 90);
+  text("Left Edge : "+P1.getLeftEdge(), 50, 110);
+
   //End Game on left side  
-  if (P1.getv() < R1.getx()) {
-  textSize(20);
-  text("GAME OVER", 10, 50);
-  noLoop();
+  if (P1.getRightEdge() < R1.getLeftSide()) {
+    textSize(20);
+    text("GAME OVER", 10, 50);
+    noLoop();
   }
 
   //End game on right side 
-  if (P1.getu() > R1.getx() + 50);  
+  if (P1.getLeftEdge() > R1.getLeftSide() + 50);  
   {
-  textSize(20);
-  text("GAME OVER", 10, 50);
-  noLoop();
+    textSize(20);
+    text("GAME OVER", 10, 50);
+    noLoop();
   }
 
   noStroke();
