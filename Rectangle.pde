@@ -24,14 +24,14 @@ class Rectangle {
     // draw rectangle 
     rect(x, y, 50, 80);
 
-    //This is here becasue you can't add and subtract in text 
-    float t=x+50;
+    ////This is here becasue you can't add and subtract in text 
+    //float t=x+50;
 
     //Showing position of the Rect 
 
-    textSize(15);
-    text("X : "+x, 90, 130);
-    text("X +50 : "+t, 90, 150);
+    //textSize(15);
+    //text("X : "+x, 90, 130);
+    //text("X +50 : "+t, 90, 150);
 
 
     //Chaning the vertical position of the rect 
@@ -54,4 +54,10 @@ class Rectangle {
   float getLeftSide() { 
     return x;
   }
+  
+  float getRightSide(){
+    return x+50;
+  }
+  
+      
 }

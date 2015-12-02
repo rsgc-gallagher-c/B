@@ -11,12 +11,11 @@ class Player {
   Player (float topX_, float topY_) {
     topX = topX_;
     topY = topY_;
-    
   }
 
   void update() {
 
-     
+
     //Make the colour of the player (triangle) 
     fill(0, 0, 0);
 
@@ -53,7 +52,7 @@ class Player {
     return leftEdge;
   }
 
-    //moving the player with the keys 
+  //moving the player with the keys 
   void sets1(float newS1_) {
     s1 = newS1_;
     print("s1 was set");

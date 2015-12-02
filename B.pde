@@ -45,31 +45,37 @@ void draw() {
   textSize(20);
   text("Score: "+ score, 10, 30);
 
+  //Creating and updateing the player and the rectangle 
+  R1.update();
+  P1.update();
+
   //Showing position of the Player 
   fill(255);
   textSize(15);
-  text("Right Edge : "+P1.getRightEdge(), 50, 90);
-  text("Left Edge : "+P1.getLeftEdge(), 50, 110);
+  text("P Right Edge : "+P1.getRightEdge(), 50, 90);
+  text("P Left Edge : "+P1.getLeftEdge(), 50, 110);
+  textSize(15);
+  text("R Right Side : "+R1.getRightSide(), 30, 130);
+  text("R Left Side : "+R1.getLeftSide(), 30, 150);
 
-  //End Game on left side  
-  if (P1.getRightEdge() < R1.getLeftSide()) {
+  //End Game on Right side  
+  if (P1.getRightEdge() > R1.getRightSide()) {
     textSize(20);
     text("GAME OVER", 10, 50);
+    print("Game Over on right side");
     noLoop();
   }
 
-  //End game on right side 
-  if (P1.getLeftEdge() > R1.getLeftSide() + 50);  
+  //End game on left side 
+  if (P1.getLeftEdge() < R1.getLeftSide());  
   {
-    textSize(20);
-    text("GAME OVER", 10, 50);
-    noLoop();
+   textSize(20);
+   text("GAME OVER", 10, 50);
+   print("Game Over on left side");
+   noLoop();
   }
 
   noStroke();
-
-  R1.update();
-  P1.update();
 }
 
 //respond to key pressed 
