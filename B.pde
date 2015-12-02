@@ -47,17 +47,17 @@ void draw() {
 
   //End Game on left side  
   if (P1.getv() < R1.getx()) {
-   textSize(20);
-   text("GAME OVER", 10, 50);
-   noLoop();
+  textSize(20);
+  text("GAME OVER", 10, 50);
+  noLoop();
   }
 
   //End game on right side 
   if (P1.getu() > R1.getx() + 50);  
   {
-   textSize(20);
-   text("GAME OVER", 10, 50);
-   noLoop();
+  textSize(20);
+  text("GAME OVER", 10, 50);
+  noLoop();
   }
 
   noStroke();
