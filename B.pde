@@ -28,16 +28,8 @@ void draw() {
   // background clears each time the program loops
   background(0);
 
-
-
+  //Set colour of the background 
   fill (255);
-
-  ////To see where the points are 
-  //println(P1.getv());
-  //println(P1.getu());
-  //println(R1.getx());
-  //println(R1.getx()+50);
-
 
   //score counter
   m = m+1;
@@ -54,6 +46,8 @@ void draw() {
   textSize(15);
   text("P Right Edge : "+P1.getRightEdge(), 50, 90);
   text("P Left Edge : "+P1.getLeftEdge(), 50, 110);
+  
+  //Showing position of the rectangle 
   textSize(15);
   text("R Right Side : "+R1.getRightSide(), 30, 130);
   text("R Left Side : "+R1.getLeftSide(), 30, 150);
@@ -69,10 +63,10 @@ void draw() {
   //End game on left side 
   if (P1.getLeftEdge() < R1.getLeftSide());  
   {
-   textSize(20);
-   text("GAME OVER", 10, 50);
-   print("Game Over on left side");
-   noLoop();
+  textSize(20);
+  text("GAME OVER", 10, 50);
+  print("Game Over on left side");
+  noLoop();
   }
 
   noStroke();

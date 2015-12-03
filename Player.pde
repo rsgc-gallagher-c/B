@@ -23,19 +23,12 @@ class Player {
 
     triangle(topX, topY, topX - 12, topY + 17, topX + 12, topY + 17);
 
-    // Move the player herizontal 
+    //Move the player herizontal 
     topX = topX-s1;
 
-    //This is here becasue you can't add and subtract in text 
+    //To make code more readable 
     rightEdge=topX+12;
     leftEdge=topX-12;
-
-    ////Showing position of the Player 
-    //fill(255);
-    //textSize(15);
-    //text("topX+12 : "+v1, 50, 90);
-    //text("topX-12 : "+u1, 50, 110);
-
 
     // Move the player vertical  
     //topY = topY-1;

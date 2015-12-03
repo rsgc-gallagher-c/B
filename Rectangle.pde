@@ -1,10 +1,10 @@
 class Rectangle {
 
   //global variables 
-  float x; //X horizontal position 
-  float y; //Y vertial position 
-  float a;
-  float b;
+  float x; //X horizontal position of the rect 
+  float y; //Y vertial position of the rect 
+  float a; 
+  float b; 
 
   //constructor (like setup - runs once)
   Rectangle() { 
@@ -23,16 +23,6 @@ class Rectangle {
 
     // draw rectangle 
     rect(x, y, 50, 80);
-
-    ////This is here becasue you can't add and subtract in text 
-    //float t=x+50;
-
-    //Showing position of the Rect 
-
-    //textSize(15);
-    //text("X : "+x, 90, 130);
-    //text("X +50 : "+t, 90, 150);
-
 
     //Chaning the vertical position of the rect 
     //y=y-1;
