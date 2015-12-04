@@ -46,7 +46,7 @@ void draw() {
   textSize(15);
   text("P Right Edge : "+P1.getRightEdge(), 50, 90);
   text("P Left Edge : "+P1.getLeftEdge(), 50, 110);
-  
+
   //Showing position of the rectangle 
   textSize(15);
   text("R Right Side : "+R1.getRightSide(), 30, 130);
@@ -54,19 +54,18 @@ void draw() {
 
   //End Game on Right side  
   if (P1.getRightEdge() > R1.getRightSide()) {
-    textSize(20);
-    text("GAME OVER", 10, 50);
-    print("Game Over on right side");
-    noLoop();
+   textSize(20);
+   text("GAME OVER", 10, 50);
+   print("Game Over on right side");
+   noLoop();
   }
 
   //End game on left side 
-  if (P1.getLeftEdge() < R1.getLeftSide());  
-  {
-  textSize(20);
-  text("GAME OVER", 10, 50);
-  print("Game Over on left side");
-  noLoop();
+  if (P1.getLeftEdge() < R1.getLeftSide());
+    textSize(20);
+    text("GAME OVER", 10, 50);
+    print("Game Over on left side");
+    noLoop();
   }
 
   noStroke();

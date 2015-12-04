@@ -45,7 +45,7 @@ class Player {
     return leftEdge;
   }
 
-  //moving the player with the keys 
+  //Take the speed from the main program and sending it to the player class 
   void sets1(float newS1_) {
     s1 = newS1_;
     print("s1 was set");
