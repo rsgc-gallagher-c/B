@@ -61,7 +61,7 @@ void draw() {
   }
 
   //End game on left side 
-  if (P1.getLeftEdge() < R1.getLeftSide());
+  if (P1.getLeftEdge() < R1.getLeftSide()){
     textSize(20);
     text("GAME OVER", 10, 50);
     print("Game Over on left side");
