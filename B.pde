@@ -20,7 +20,10 @@ void setup() {
   //score
   score = 0;
   m = 0;
+
+  noLoop();
 }
+
 
 void draw() {
 
@@ -54,14 +57,14 @@ void draw() {
 
   //End Game on Right side  
   if (P1.getRightEdge() > R1.getRightSide()) {
-   textSize(20);
-   text("GAME OVER", 10, 50);
-   print("Game Over on right side");
-   noLoop();
+    textSize(20);
+    text("GAME OVER", 10, 50);
+    print("Game Over on right side");
+    noLoop();
   }
 
   //End game on left side 
-  if (P1.getLeftEdge() < R1.getLeftSide()){
+  if (P1.getLeftEdge() < R1.getLeftSide()) {
     textSize(20);
     text("GAME OVER", 10, 50);
     print("Game Over on left side");
@@ -82,8 +85,12 @@ void keyPressed() {
     print("d was pressed");
     P1.sets1 (-1);
   }
-}
 
+  //Allows for the game to not run unless space bar is pressed
+  if (key == ' ') {
+    loop();
+  }
+}
 
 void keyReleased() {
   P1.sets1 (0);
