@@ -3,6 +3,7 @@
 
 int m; // Score Seconds
 int score; // score
+int S; // For the "Press space bar to start game" 
 
 
 Player P1; //makes new player 
@@ -21,6 +22,8 @@ void setup() {
   score = 0;
   m = 0;
 
+  //Make S the variable for x cordinent for "Press space to start game"
+  S = 5;
   noLoop();
 }
 
@@ -43,6 +46,13 @@ void draw() {
   //Creating and updateing the player and the rectangle 
   R1.update();
   P1.update();
+
+  //Make the text white and the size 15
+  fill(255);
+  textSize(15);
+
+  //Text on screen "Press space bar to start game" 
+  text("Press Space To Start Game", S, 185);
 
   //Showing position of the Player 
   fill(255);
@@ -89,6 +99,7 @@ void keyPressed() {
   //Allows for the game to not run unless space bar is pressed
   if (key == ' ') {
     loop();
+    S = 700;
   }
 }
 
