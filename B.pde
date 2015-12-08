@@ -4,6 +4,7 @@
 int m; // Score Seconds
 int score; // score
 int S; // For the "Press space bar to start game" 
+boolean repeat;
 
 
 Player P1; //makes new player 
@@ -24,6 +25,7 @@ void setup() {
 
   //Make S the variable for x cordinent for "Press space to start game"
   S = 5;
+  repeat=false;
   noLoop();
 }
 
@@ -70,6 +72,9 @@ void draw() {
     textSize(20);
     text("GAME OVER", 10, 50);
     print("Game Over on right side");
+    //To reset the game 
+    textSize(12);
+    text("Press Z then space to reset game", 5, 180);
     noLoop();
   }
 
@@ -78,6 +83,9 @@ void draw() {
     textSize(20);
     text("GAME OVER", 10, 50);
     print("Game Over on left side");
+    //To reset the game
+    textSize(12);
+    text("Press Z then space to reset game", 5, 180);
     noLoop();
   }
 
@@ -101,10 +109,21 @@ void keyPressed() {
     loop();
     S = 700;
   }
-  
+
   //To reset the game 
-   if (key == 'z') {
-    setup();
+  if (key == 'z') {
+    //Create new player
+    P1 = new Player (100, 250);
+    R1 = new Rectangle (); 
+
+    //score
+    score = 0;
+    m = 0;
+
+    //Make S the variable for x cordinent for "Press space to start game"
+    S = 5;
+    repeat=true;
+    noLoop();
   }
 }
 
