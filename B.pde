@@ -101,6 +101,11 @@ void keyPressed() {
     loop();
     S = 700;
   }
+  
+  //To reset the game 
+   if (key == 'z') {
+    setup();
+  }
 }
 
 void keyReleased() {
