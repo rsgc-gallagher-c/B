@@ -4,7 +4,7 @@
 int m; // Score Seconds
 int score; // score
 int S; // For the "Press space bar to start game" 
-boolean repeat;
+boolean repeat; //The true or false statement to allow to restart my program 
 
 
 Player P1; //makes new player 
@@ -25,6 +25,7 @@ void setup() {
 
   //Make S the variable for x cordinent for "Press space to start game"
   S = 5;
+
   repeat=false;
   noLoop();
 }
@@ -116,6 +117,7 @@ void keyPressed() {
     P1 = new Player (100, 250);
     R1 = new Rectangle (); 
 
+    //Underneeth runs only select parts of what would be in Setup
     //score
     score = 0;
     m = 0;
