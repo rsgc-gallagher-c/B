@@ -17,6 +17,8 @@ void setup() {
 
   //Create new player
   P1 = new Player (100, 250);
+  
+  //Create new Rect 
   R1 = new Rectangle (); 
 
   //score
@@ -108,16 +110,19 @@ void keyPressed() {
   //Allows for the game to not run unless space bar is pressed
   if (key == ' ') {
     loop();
+    //Moves the "Press space bar to start game" off the screen
     S = 700;
   }
 
   //To reset the game 
   if (key == 'z') {
+    
+    //Below runs only select parts of what would be in Setup when Z is pressed 
+    
     //Create new player
     P1 = new Player (100, 250);
     R1 = new Rectangle (); 
 
-    //Underneeth runs only select parts of what would be in Setup
     //score
     score = 0;
     m = 0;
@@ -129,6 +134,8 @@ void keyPressed() {
   }
 }
 
+
+//To make sure that when either the A or D key is released, the player stops moving 
 void keyReleased() {
   P1.sets1 (0);
 }
